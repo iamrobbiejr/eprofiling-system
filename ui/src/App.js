@@ -10,13 +10,13 @@ function App() {
   return (
       <div>
         <BrowserRouter>
-          <Switch>
-            <Route exact path={'/'} component={Dash}/>
+            <Switch>
+                <Route path={'/'} component={Dash}/>
+            </Switch>
 
-          </Switch>
         </BrowserRouter>
       </div>
   );
 }
 
-export default App;
+export default Sentry.withProfiler(App);
